@@ -1,6 +1,10 @@
+FROM docker.io/alpine:latest AS build
+
+RUN wget https://github.com/GraphWalker/graphwalker-project/releases/download/4.3.3/graphwalker-cli-4.3.3.jar
+
 FROM docker.io/ubuntu/jre:21-24.04_edge
 
-COPY graphwalker-cli-4.3.3.jar /
+COPY --from=build /graphwalker-cli-4.3.3.jar /graphwalker-cli-4.3.3.jar
 
 EXPOSE 8887
 
