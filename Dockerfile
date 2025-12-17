@@ -1,4 +1,4 @@
-FROM nexus.eurofunk.com/ubuntu/jre:21-24.04_edge
+FROM docker.io/ubuntu/jre:21-24.04_edge
 
 COPY graphwalker-cli-4.3.3.jar /
 
