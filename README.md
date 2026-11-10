@@ -9,4 +9,4 @@ during runtime. The container is used to calculate the next step in the model.
 ## Usage
 To run the container use the following command:
 
-```sudo docker run -it -p 8887:8887 gitlab-registry.eurofunk.com/eocs/sandbox/graph-walker-online-path:main```
+```sudo docker run -it -p 8887:8887 ghcr.io/dpoertsch/graph-walker-online-path:main```
